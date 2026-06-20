@@ -1,0 +1,12 @@
+{
+  "name": "thunder-exfiltration-payload",
+  "version": "1.0.0",
+  "description": "Educational C2 and Data Exfiltration Payload for Thunder Hackathon 3.0.",
+  "main": "src/index.js",
+  "scripts": {
+    "start:server": "node receiver-server.js",
+    "start:payload": "node src/index.js",
+    "test:dry": "node src/index.js --dry-run"
+  },
+  "dependencies": {}
+}
